@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/ecd70eac4a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,300;0,500;1,500;1,700&display=swap" rel="stylesheet">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
@@ -17,48 +19,53 @@
     <!-- Header -->
     <div class="background-1">
         <header>
-            <div class="header">
-                <div class="language">
+            <div class="header__content">
+                <div class="header__language">
                     <p>EN</p>
-                    <label class="switch">
+                    <label class="header__switch">
                         <input type="checkbox">
-                        <span class="slider round"></span>
+                        <span class="header__slider"></span>
                     </label>
                     <p>UKR</p>
                 </div>
 
-                <div class="header-icons">
+                <div class="header__icons">
                     <a href="#">SERVICES</a>
                     <a href="#">ABOUT US</a>
                     <a href="#">CONTACTS</a>
                     <a href="#">BLOG</a>
                 </div>
 
-                <div class="contact">
+                <div class="header__contact">
                     <a href="#">CONTACT US</a>
                 </div>
             </div>
-
+        </header>
+        <header class="header__mobile">
+            <div class="header__mobile__content"></div>
         </header>
 
-
-        <div class="banner">
-            <h2>Our team of qualified lawyers </h2>
-            <h2>is ready to provide an expert advice </h2>
+        <!--this web site need alot of JavaScript but that will be added when author will learn it-->
+        <div class="content tittle">
+            <div class="tittle__text tittle__left"><h2>Our team of<br /> qualified lawyers </h2></div>
+            <div class="tittle__text tittle__right"><h2>is ready to provide<br /> an expert advice </h2></div>
         </div>
     </div>
 
-    <div class="banner-2">
-        <h2>on immigration law and related legal services.</h2>
-        <p>Immigrate to Ukraine or get any other legal <a href="#">services</a> easily with peace of mind</p>
-        <p>Who we are</p>
-        <p>Honest and open in working with Clients - is the style of our work. Our fundamental goals are to help our clients successfully accomplish their objectives.</p>
-        <ul>
-            <li>Confidentiality</li>
-            <li>Support</li>
-            <li>Experience</li>
-            <li>Reliability</li>
-        </ul>
+    <div class="content tittle__two">
+        <div class="tittle__two__text text_top tittle__text tittle__right"><h2>on immigration law and related legal services.</h2></div>
+       <div class=" tittle__two__text text_left"><p>Immigrate to Ukraine or get any other legal <a href="#">services</a> easily with peace of mind</p></div>
+        <div class="tittle__two__text text_middle"><p>Who we are</p></div>
+        <div class="tittle__two__text text_right"><p>Honest and open in working with Clients - is the style of our work. Our fundamental goals are to help our clients successfully accomplish their objectives.</p></div>
+        <div class="tittle__two__text tittle__two__list">
+            <ul>
+                <li>Confidentiality</li>
+                <li>Support</li>
+                <li>Experience</li>
+                <li>Reliability</li>
+            </ul>
+        </div>
+       
     </div>
     <div class="banner-3">
         <h2>Our<span>/</span><br>services</h2>
@@ -84,7 +91,7 @@
         </div>
         <hr>
     </div>
-
+    <!--Desktop-->
     <div class="banner-4">
         <p>About our team</p>
         <p>We provide qualified legal assistance in immigration, civil, business, IP and other branches of law. For the time of our work, we have helped our Clients resolve the most difficult issues, as evidenced by positive feedback. </p>
@@ -110,6 +117,39 @@
         <div>
             <h2>24/7</h2>
             <p>professional help</p>
+        </div>
+    </div>
+
+    <!--Mobile-->
+
+    <div class="banner-4-mobile">
+        <p>About</p>
+        <p>We provide qualified legal assistance in immigration, civil, business, IP and other branches of law. For the time of our work, we have helped our Clients resolve the most difficult issues, as evidenced by positive feedback. </p>
+        <p>More about us</p>
+    </div>
+
+    <div class="banner-5-mobile">
+        <div>
+            <p>Honesty and openness in working with Clients - is the style of our work. “Entrust your concerns in our care” is not only our motto but also an offer to charge us with solving personal and corporate issues that are important to you. Be sure - we will make our best to positively resolve your issues by providing our legal services!</p> 
+        </div>
+        <div class="box-mob">
+            <div>
+                <h2>+110</h2>
+                <p>satisfied clients</p>
+            </div>
+            <div>
+                <h2>03</h2>
+                <p>lawyers</p>
+            </div>
+      
+            <div>
+                <h2>04</h2>
+                <p>years of experience</p>
+            </div>
+            <div>
+                <h2>24/7</h2>
+                <p>professional help</p>
+            </div>
         </div>
     </div>
 
@@ -157,29 +197,30 @@
     <div class="banner-10">
         <h2>REWIEVS</h2>
         <div>
-        <div class="coments">
-            <p>Goofy</p>
+            <div class="coments">
+                <p>Goofy</p>
+            </div>
+            <div class="coments">
+                <p>Scrooge McDuck</p>
+                <p>Dreamland</p>
+                <p>Facebook</p>
+                <img src="resources\images\SM.png">
+                <p>
+                    This company made me all documents to stay in Ukraine!  Our cooperation was quickly and pleasant. Thanks a lot!
+                </p>
+            </div>
+            <div class="coments">
+                <p>Bucks Bunny</p>
+            </div>
+            <div class="coments">
+                <p>Pig Porkinson</p>
+            </div>
+            <div class="coments">
+                <p>Minny Mouse</p>
+            </div>
         </div>
-        <div class="coments">
-            <p>Scrooge McDuck</p>
-            <p>Dreamland</p>
-            <p>Facebook</p>
-            <img src="resources\images\SM.png">
-            <p>This company made me all documents to stay in Ukraine!  Our cooperation was quickly and pleasant. Thanks a lot!  
-            </p>
-        </div>
-        <div class="coments">
-            <p>Bucks Bunny</p>
-        </div>
-        <div class="coments">
-            <p>Pig Porkinson</p>
-        </div>
-        <div class="coments">
-            <p>Minny Mouse</p>
-        </div>
-</div>
     </div>
-    
+
 
 
 
@@ -190,23 +231,23 @@
 
 
     <footer>
-       <div class="foot-1">
-        <h2>We will help you to<br> get your<br> legal services </h2>
-        <h3>CONTACT US</h3>
+        <div class="foot-1">
+            <h2>We will help you to<br> get your<br> legal services </h2>
+            <h3>CONTACT US</h3>
         </div>
-    <div class="foot-2">
-        <div class="block">
-            <p>migrate@officialmail.com</p>
-            <p>+38 068 292 48 92</p>
-            <p>+38 068 123 45 64</p>
-        </div>
-        <div class="block-2">
-            <h3>CALL</h3>
-            <h3>INSTAGRAM</h3>
-            <h3>FACEBOOK</h3>
+        <div class="foot-2">
+            <div class="block">
+                <p>migrate@officialmail.com</p>
+                <p>+38 068 292 48 92</p>
+                <p>+38 068 123 45 64</p>
+            </div>
+            <div class="block-2">
+                <h3>CALL</h3>
+                <h3>INSTAGRAM</h3>
+                <h3>FACEBOOK</h3>
 
+            </div>
         </div>
-    </div>
     </footer>
 
 
