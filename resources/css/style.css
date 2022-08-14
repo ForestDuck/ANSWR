@@ -62,6 +62,18 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
 
 /*BackGround*/
 .background-1 {
@@ -195,12 +207,12 @@ input:checked+.header__slider:before {
 }
 .tittle__text {
   position: relative;
-  width: 50%;
+  width: 45%;
 }
 
 
 .tittle__left {
-  left: 22rem;
+  left: 20rem;
 }
 
 .tittle__right {
@@ -330,19 +342,23 @@ input:checked+.header__slider:before {
   background: rgb(177, 201, 207);
   background: linear-gradient(90deg, rgba(177, 201, 207, 1) 0%, rgba(119, 166, 235, 1) 0%, rgba(201, 168, 217, 1) 38%, rgba(241, 201, 233, 1) 54%, rgba(237, 203, 116, 1) 87%);
   scroll-snap-align: start;
+  height: 60vh;
 }
 
 .services__head {
   display: inline-flex;
+  font-size: 36px;
 }
 .services__head img {
-  margin: 0 0 1rem 2rem;
+  margin: 0 0 0 2rem;
   width: 1.5rem;
 }
 .services__text {
-  font-size: 16px;
-  padding: 20px 0;
-  width: 40%;
+  font-size: 24px;
+  padding: 35px 0;
+  line-height: 30px;
+  width: 50%;
+  font-weight: 300;
 }
 
 .services__button a {
@@ -473,14 +489,14 @@ input:checked+.header__slider:before {
   color: #FFFFFF;
   background-color: #000000;
   scroll-snap-align: start;
-
-
+  width:100%;
 }
+
 .p_heading {
   position: relative;
   font-size: 100px;
-  left: 5%;
   font-weight: 500;
+  left:5%;
 
 }
 
@@ -502,6 +518,9 @@ input:checked+.header__slider:before {
   line-height: 24px;
   font-weight: 400;
 }
+.princeples .p_heading h2{
+  left:5%;
+}
 
 .princeples a {
   border: solid rgba(255, 106, 22, 1) 2px;
@@ -513,8 +532,9 @@ input:checked+.header__slider:before {
 .princeples img {
   width: 1.5rem;
   position: relative;
-  left: 90%;
+  left: 40%;
   top: 30px;
+  padding: 2px;
 }
 /*Slides*/
 .slides {
@@ -530,6 +550,7 @@ input:checked+.header__slider:before {
   transition: ease-out 1s;
   cursor: pointer;
   scroll-snap-align: start;
+  width:50%;
 
 }
 .slides__text h2:first-child {
@@ -661,8 +682,6 @@ input:checked+.header__slider:before {
 .comments__col {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  jus
 }
 
 
@@ -746,18 +765,18 @@ footer {
 }
 
 .footer__bigcircle {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: 35%;
-  justify-content: center;
-  align-content: center;
-  font-size: 48px;
-  border-radius: 50%;
-  width: 100%;
-  bottom: 20px;
-  color: #ffffff;
-  background-color: rgba(255, 106, 22, 1);
+  display: block;
+ 
 }
+
+.footer__bigcircle h3{
+  font-size: 36px;
+  color: #FFFFFF;
+  background: orange;
+    border-radius: 50%;
+    padding: 250px 150px !important;
+}
+
 
 .footer__main {
   display: inline-flex;
@@ -789,7 +808,8 @@ footer {
   display: inline-flex;
   flex-basis: 60%;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 120px;
+  justify-content: space-evenly;
 
 }
 
@@ -808,9 +828,23 @@ footer {
 }
 
 
-
 .block p:first-child {
   padding-bottom: 50px;
+}
+
+.creator{
+  position: relative;
+  top: 250px;
+  font-size: 16px;
+}
+
+
+.footer__block2 a:visited {
+  color: #000000;
+}
+
+.footer-mobile{
+  display: none;
 }
 /*Mobile Version 1.0*/
 @media screen and (max-width: 720px) {
@@ -977,7 +1011,7 @@ footer {
   .text_left, .text_middle, .text_right,
   .tittle__two__list, .tittle__two ul, .servicebox__text h2,
   .servicebox__text p, .services__box, .services__head, .services__text, .services__button, .statistic_mobile__box,
-  .mob_about p, .mob_stat, .mob_stat__text, .mob_stat__main, .mob_stat__box, .p_heading h2, .princeples h2:first-child, .princeples p:nth-child(2), .princeples p:nth-child(3) {
+  .mob_about p, .mob_stat, .mob_stat__text, .mob_stat__main, .mob_stat__box, .p_heading h2, .princeples h2:first-child, .princeples p:nth-child(2), .princeples p:nth-child(3),.comments__media {
       position: unset;
       width: 100%;
   }
@@ -985,7 +1019,7 @@ footer {
 
 
   .tittle {
-      padding: 200px 10px 0 10px;
+      padding: 200px 0 0 0;
 
   }
 
@@ -1001,8 +1035,8 @@ footer {
       font-size: 16px;
   }
 
-  .tittle__two .text_right, .text_top {
-      padding: 0 10px 10px 10px;
+  .tittle__two .text_right, .text_top,.tittle__left, .tittle__right {
+      padding: 0  10px;
   }
 
   .text_left {
@@ -1055,8 +1089,9 @@ footer {
 
   }
   .services__box {
-      padding: 15% 2%;
+      padding: 12% 2%;
       scroll-snap-align: start;
+      height: auto;
   }
   .services__head {
       content: "";
@@ -1097,9 +1132,10 @@ footer {
       line-height: 21px;
       opacity: 0.7;
   }
-
+  .services__button{
+    margin-bottom: 40px
+  }
   .services__button a {
-      padding: 5% 34%;
       white-space: nowrap;
 
   }
@@ -1245,13 +1281,14 @@ footer {
       padding: 2rem 0 4rem 0.5rem;
   }
 
-
-
+  
   .desktop-team {
       display: none;
   }
 
-
+  .p_heading{
+    left:0;
+  }
   .team-mobile {
       display: flex;
       flex-direction: column;
@@ -1286,6 +1323,10 @@ footer {
       font-size: 16px;
       padding-bottom: 70px;
       ;
+  }
+
+  .bio-block{
+    width: 100%;
   }
   .team-mobile__block {
       scroll-snap-align: start;
@@ -1365,7 +1406,7 @@ footer {
 
   .comments__media, .comments__loc {
       position: relative;
-      right: 80px;
+      
   }
   .comments__coment {
       flex-wrap: wrap;
@@ -1387,6 +1428,7 @@ footer {
       align-items: center;
   }
   .footer-mobile {
+    display: block;
       border-bottom: solid 1px;
       padding: 10px;
   }
@@ -1407,23 +1449,32 @@ color:orangered;
 }
 
 /*Tablets Version 1.0*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1040px){
 .tittle__left, .tittle__right{
 position: unset;
  width:100%;
- padding: 0 1.2rem;
+ padding: 0 0 0 20px;
+}
+
+.tittle__two__text:first-child{
+  padding:0 0 20px 20px;
 }
 
 .services__box{
-  padding:100px;
   font-size:60px;
-  
+  padding: 20px;
 }
 .services__text{
-  padding:40 0;
+  padding:40px 0 0 0;
   width:100%;
   line-height: 30px;
 }
+
+.servicebox__text p {
+  left: 55%;
+}
+
+
 .comments {
   display: block;
   padding: 2rem 0 1rem 0.5rem;
@@ -1432,6 +1483,15 @@ position: unset;
 
 .comments__coment {
   padding: 30px 30px 30px 0;
+}
+
+.footer__main{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__block1 {
+  padding-bottom: 30px;;
 }
 
 }
