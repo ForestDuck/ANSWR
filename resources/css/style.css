@@ -343,6 +343,7 @@ input:checked+.header__slider:before {
   background: linear-gradient(90deg, rgba(177, 201, 207, 1) 0%, rgba(119, 166, 235, 1) 0%, rgba(201, 168, 217, 1) 38%, rgba(241, 201, 233, 1) 54%, rgba(237, 203, 116, 1) 87%);
   scroll-snap-align: start;
   height: 60vh;
+  width: 100%;
 }
 
 .services__head {
@@ -493,11 +494,9 @@ input:checked+.header__slider:before {
 }
 
 .p_heading {
-  position: relative;
   font-size: 100px;
   font-weight: 500;
-  left:5%;
-
+  padding: 0 0 0 1rem;
 }
 
 .princeples p:nth-child(2) {
@@ -564,7 +563,8 @@ input:checked+.header__slider:before {
 
 .slides__text p:nth-child(3) {
   font-size: 16px;
-  padding: 0 100px 120px 100px;
+  padding: 0 80px 120px 80px;
+  line-height: 30px;
 
 }
 
@@ -665,6 +665,11 @@ input:checked+.header__slider:before {
 }
 .comments__box, .comments .p_heading {
   flex-basis: 45%;
+
+}
+
+.comments__box{
+  padding: 0 0 0 1rem;
 }
 
 .comments__coment {
@@ -772,9 +777,9 @@ footer {
 .footer__bigcircle h3{
   font-size: 36px;
   color: #FFFFFF;
-  background: orange;
+  background: rgba(255, 106, 22, 1);ge;
     border-radius: 50%;
-    padding: 250px 150px !important;
+    padding: 200px 150px !important;
 }
 
 
@@ -841,6 +846,10 @@ footer {
 
 .footer__block2 a:visited {
   color: #000000;
+}
+
+.footer__block2 a:hover{
+  color: rgba(255, 106, 22, 1);
 }
 
 .footer-mobile{
@@ -1286,9 +1295,6 @@ footer {
       display: none;
   }
 
-  .p_heading{
-    left:0;
-  }
   .team-mobile {
       display: flex;
       flex-direction: column;
@@ -1372,7 +1378,7 @@ footer {
 
   .comments {
       display: block;
-      padding: 2rem 0 1rem 0.5rem;
+      padding: 2rem 0 1rem 0;
       font-size: 14px;
   }
 
@@ -1441,6 +1447,7 @@ footer {
 color:orangered;
 }
 .creator {
+  position: unset;
   font-size: 12px;
   color: black;
   margin-top: 80px;
@@ -1475,6 +1482,25 @@ position: unset;
 }
 
 
+
+.team__bio{
+  position: unset;
+  display: flex;
+  font-size: 36px;
+  font-weight: 300;
+  padding: 30px 0 30px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__name {
+  width: 80%;
+}
+.team__text{
+  position: unset;
+  width: 60%;
+}
+
 .comments {
   display: block;
   padding: 2rem 0 1rem 0.5rem;
@@ -1485,9 +1511,14 @@ position: unset;
   padding: 30px 30px 30px 0;
 }
 
+
 .footer__main{
   display: flex;
   flex-direction: column;
+}
+.footer__bigcircle{
+  position: relative;
+  right:25%;
 }
 
 .footer__block1 {
