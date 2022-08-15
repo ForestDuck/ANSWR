@@ -843,6 +843,9 @@ footer {
   font-size: 16px;
 }
 
+.footer__block2 a{
+color:#000000;
+}
 
 .footer__block2 a:visited {
   color: #000000;
